@@ -1,0 +1,302 @@
+/* CSS Document */
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;500&family=Noto+Serif&display=swap');
+*{
+	margin: 0;
+	padding: 0;
+}
+html{
+	scroll-behavior: smooth;
+}
+#wrapper{
+	position: relative;
+}
+header {
+    width: 100%;
+    padding: 5px 0;
+/*    background: #f59b9e;*/
+    position: fixed;
+    z-index: 99999;
+}
+body{
+/*	background: url("../img/4853433.jpg");*/
+/*	background-size: cover;*/
+	color: #981d26;
+	font-family: 'Nunito', sans-serif;
+	display: block;
+}
+.row{
+	justify-content: center;
+	display: flex;
+	flex-wrap: wrap;
+}
+.logo img{
+	width: 70px;
+}
+header{
+	padding: 12px 0;
+}
+.menu{
+	height: 100%;
+}
+.menu ul{
+	height: 100%;
+	list-style: none;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.menu ul li{
+	margin: 0 20px;
+}
+.menu ul li a{
+	color: white;
+	text-decoration: none;
+	text-transform: uppercase;
+	transition-duration: 1s;
+}
+.menu ul li a:hover{
+	color: #AB011C;
+}
+.button{
+	display: flex;
+	align-items: center;
+}
+.btn{
+	padding: 10px 40px;
+	background:#AB011C;
+	color: white;
+	text-decoration: none;
+	font-size: 18px;
+	border-radius: 20px;
+}
+.banner{
+	padding: 125px 0;
+	background: #FFC9CA;
+	margin: 0 auto;
+}
+.banner h1{
+	font-size: 55px;
+	font-weight: 400;
+}
+.primary-color{
+	color: #AB011C;
+}
+.contact{
+	display: flex;
+	justify-content: space-between;
+	padding: 20px 0;
+}
+.left-banner{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+.content {
+	position: absolute;
+	top: 550px;
+	left: 35%;
+	text-transform: uppercase;
+	text-align: center;
+	color: #FF9600;
+	display: inline-block;
+}
+.col-6 img{
+	width: 100%;
+}
+.content a{
+	background: #AB011C;
+	color: black;
+	text-decoration: none;
+	padding: 10px 30px;
+}
+.about{
+	background: #FF8385;
+	padding: 25px 0 100px;
+}
+section{
+	display: block;
+}
+.box1{
+	background: #FBF5DA;
+	font-size: 20px;
+	width: 400px;
+	height: 300px;
+	padding: 30px;
+	margin: 200px 80px ;
+	border-radius: 50px;
+}
+
+.textbox{
+/*	text-align: center;*/
+	text-transform: uppercase;
+}
+.textbox1 {
+    padding-top: 300px 200px;
+    margin-left: 50px;
+    font-size: 20px;
+}
+.textbox h2 {
+/*	margin-top: 10px;*/
+    font-size: 40px;
+    color: white;
+}
+h2 {
+    display: block;
+	margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+.hinh img{
+	padding: 130px;
+	width: 500px;
+}
+
+.ufo{
+    width: 200px;
+/*   position: absolute;*/
+    transform: rotate(0deg);
+	top: 300px;
+    animation: ufo 10s infinite linear;
+}
+@keyframes ufo{
+	from{
+		transform: translate(-200px) rotate(0deg)
+	}
+	to{
+		transform: translate(1500px) rotate(0deg)
+	}
+}
+.skills{
+	background: #FF8385;
+	width: 100%; 
+	display: flex;
+}
+.col-10{
+/*	display: flex;*/
+}
+.col-10 h3{
+	font-size: 30px;
+}
+.col-10 img{
+	width: 400px;
+}
+.hang{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-around;
+	padding: 30px;
+}
+.experiance{
+	background: #FF8385;
+	width: 100%;
+	text-align: center;
+	display: flex;
+}
+.experiance img{
+	width: 300px;
+	padding: 20px;
+}
+.box{
+	padding: 20px;
+}
+.box-h3{
+	margin: 24px 0 15px;
+}
+.col-12{
+	display: flex;
+	justify-content: center;
+}
+.portfolio{
+	padding: 60px 0;
+	display: flex;
+	background: #FF8385;
+}
+
+.portfolio h2{
+	margin-bottom: 40px
+}
+.tab{
+	text-align: center;
+	margin-bottom: 28px;}
+.tabcontent{
+/*	border: 2px solid white;*/
+	animation: fadeEffect 1s;
+}
+.album{
+	width: 100%;
+/*	background: blue;*/
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+.album a{
+	margin: 14px 0;
+}
+.tabcontent img{
+	width: 360px;
+}
+.tablinks{
+	padding: 5px 10px;
+	font-size: 20px;
+	background: none;
+	color: white;
+    border: none;
+    cursor: pointer;
+}
+.tab button.active:hover{
+  background:#FF5154;
+	color:#EDE5E5 ;
+}
+.tab button.active {
+  background:#FF5154;
+	color:#EDE5E5 ;
+}
+@-webkit-keyframes fadeEffect{
+	from{opacity: 0;}
+	to{opacity: 1;}
+}
+@keyframes fadeEffect{
+	from{ opacity: 0;}
+	to{opacity: 1;}
+}
+.footer{
+	padding: 40px 0;
+	background: #FFC9CA;
+}
+.text1 h2{
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 60px;
+}
+.contact{
+	padding: 20px;
+	width: 200px;
+	text-align: center;
+}
+.contact img{
+	width: 200px;
+}
+	
+.box-contact{
+	text-align: center;
+	flex-direction: column;
+	justify-content: center;
+}
+.ufo{
+	width: 80px;
+/*	position: absolute;*/
+	transform: rotate(0deg);
+	top: 300px;
+	animation: ufo 4s infinite linear;
+}
+@keyframes ufo{
+	from{
+		transform: translate(200px) rotate(0deg)
+	}
+	to{
+		transform: translate(1500px) rotate(0deg)
+	}
+}	
